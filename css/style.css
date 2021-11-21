@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+*{
+   box-sizing: border-box;
+margin:0;
+padding:0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header p{
+    text-align: left;
+    padding: 20px;
+    font-family: "Montserrat";
+    font-weight: 600;
+    color: whitesmoke;
+    font-size: 18px;
+}
+
+header{
+    padding-left: 30px ;
+    background: rgb(105,0,0);
+    background: linear-gradient(0deg, rgba(105,0,0,1) 0%, rgba(158,0,0,1) 100%); 
+   position: sticky;
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   cursor: pointer;
+   top: 0px;
+   padding-right: 20px;
+
+}
+
+.logo{
+    cursor:pointer;
+    margin-right: auto;
+  
+    max-width: 70px;
+    height: auto;
+    background: rgb(105,0,0);
+    background: linear-gradient(0deg, rgba(105,0,0,1) 0%, rgba(158,0,0,1) 100%); 
+}
+
+.nav_links{
+    list-style: none;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding:0px 10px;
+    font-family:"Montserrat", Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    padding-right: 20px;
+
+}
+
+.nav_links li a{
+    font-family:"Montserrat", Geneva, Tahoma, sans-serif;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16;
+    padding: 10px;
+    color:whitesmoke;
+    
+}
+
+.nav_links li a:hover{
+    color: gray;
+    padding: 10px;
+}
+
+.background{
+    background: rgb(195,195,195);
+    background: linear-gradient(164deg, rgba(195,195,195,1) 0%, rgba(0,0,0,1) 100%); 
+}
+
+.firstsection{
+    height:800px;
+    padding: 1%;
+    
+}
+.boxmain{
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    color: whitesmoke;
+    font-family: Roboto, sans-serif;
+        margin: auto;
+    max-width: 85%;
+    padding-top: 220px;
+
+}
+.firsthalf{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top; 
+
+    width: 80%;
+    margin: auto;
+}
+.secondhalf{
+    width: 30%;
+
+}
+.secondhalf img{
+    width: 90%;
+    border: 4px white;
+    border-radius: 25px;
+    display: block;
+    margin: auto;
+
+}
+.text-big{
+    font-size: 40px;
+    padding: 20px;
+text-align: center;
+font-style: italic;
+font-weight: 600;
+font-family: "Montserrat", sans-serif;
+
+}
+.text-small{
+font-size: 17px;
+padding: 10px;
+text-align: center;
+
+}
+#btn-a{
+    padding: 8px 20px;
+    margin: 15px 5px;
+    border: 5px whitesmoke;
+    border-radius: 8px;
+    cursor: pointer;
+    color:black;
+    font-size: 26px;
+    transition: all 0.3s ease 0s;
+
+}
+
+#btn-b{
+    padding: 8px 20px;
+    margin: 15px 5px;
+    border: 5px whitesmoke;
+    border-radius: 8px;
+    cursor: pointer;
+    color:black;
+    font-size: 26px;
+    transition: all 0.3s ease 0s;
+
+}
+
+#btn-a:hover{
+    background-color: grey;
+}
+
+#btn-b:hover{
+    background-color: grey;
+}
+
+.section{
+    height: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 100%;
+    margin: auto;
+    padding: 0px 10px;      
+}
+
+.sectionleft{
+    height: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 100%;
+    margin: auto;   
+    flex-direction: row-reverse; 
+    padding: 0px 10px;   
+      
+}
+
+.sectiontag{
+    
+    height: 40px;
+    align-items: center;
+    font-family: Roboto, sans-serif;
+    padding: 60px;
+}
+.sectionsubtag{
+    font-family: Roboto, sans-serif;}
+
+.thumbnail img{
+    width: 400px;
+    border: 3px black;
+    border-radius: 20px;
+
+}
+
+.contact{
+    background-color: #dad5d5f6;
+    height: 100vh;
+    text-align: center;
+    color: rgb(7, 0, 0);
+}
+
+
+.form{
+    max-width: 900px;
+    margin: 25px auto;
+}
+
+
+.text-center{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+
+.form-input{
+    width:100%;
+    font-size: 16px;
+    border: 2px black;
+    border-radius: 6px;
+    margin: 15px 0px;
+    padding: 5px 3px;
+    font-family: Roboto, sans-serif;}
+
+
+.text-footer{
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+
+    
+}
+
+.text-big2{
+padding:50px ;
+}
+

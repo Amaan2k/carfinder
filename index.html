@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Car Finder - Get your perfect car here</title>
+</head>
+
+<body>
+    
+    <header>
+        <p>CarFinder</p>
+
+        <img class="logo" src='autocar.svg' alt = "ldddogo">
+        <nav>
+            <ul class="nav_links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+
+    <section class="background firstsection">
+        <div class="boxmain">
+            <div class="firsthalf">
+                <p class="text-big">Can I find the best car for you?</p>
+                <p class="text-small">Machines are getting big and fast. So why are you behind? Pick the best car for
+                    you and upgrade yourself.</p>
+                <div>
+                    <button onclick="textchange1()" id="btn-a">Used Cars</button>
+                    <button onclick="textchange1()" id="btn-b">New Cars</button>
+                </div>
+
+            </div>
+            <div class="secondhalf">
+                <img src="mg.jpg" alt="car image">
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="section" id="about">
+
+        <div class="paras">
+            <p class="sectiontag text-big">The end of your search is here!</p>
+            <p class="sectionsubtag text-small">Since most Asian Americans in the late 70s and 80s drove Japanese
+                imports, they could
+                not compete with the much more powerful Detroit muscle cars. This resulted in a street-racing scene
+                consisting solely of modified imports. But a lack of aftermarket parts to make the various Toyotas
+                Hondas
+                and Nissans go faster meant that drivers often used nitrous oxide as the best way to compete. As the
+                competition increased, so did the speed and danger. One Asian American who had a vision to race safely
+                also
+                wanted to race at the local drag strip. Unfortunately the track was only reserved for V8's, Mustangs, or
+                Cameros.</p>
+        </div>
+        <div class="thumbnail">
+            <img src="must.jpg" alt="car image1" class="imgFluid">
+        </div>
+
+    </section>
+
+    <section class="sectionleft">
+        <div class="paras">
+            <p class="sectiontag text-big">Mileage is Important!</p>
+            <p class="sectionsubtag text-small">Many factors determine the best mileage cars in India. Usually, when you
+                venture to purchase a car, you look for some critical aspects. Mileage performance is one of them. The
+                factors that determine the mileage of a car are the fuel it uses, the capacity of the engine, the make
+                of the vehicle and the size. So, In india maruti makes the most fuel efficient cars.</p>
+        </div>
+        <div class="thumbnail">
+            <img src="imgcar.jpg" alt="car image2" class="imgFluid">
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="paras">
+            <p class="sectiontag text-big">Safety is more important than price!</p>
+            <p class="sectionsubtag text-small">Speaking about the initiative, Mr. Vivek Srivatsa, Head Marketing,
+                Passenger Vehicle Business Unit (PVBU), Tata Motors said, “At Tata Motors, safety is the top priority
+                for us, our customers as well as our dealers at all times. Accordingly, we have taken utmost care at all
+                dealerships and service centres to maintain requisite social distancing, minimise physical contact with
+                the vehicles and enhance the levels of sanitisation and hygiene. With ‘The Sanitised by Tata Motors’
+                initiative, we are further instilling a sense of confidence in our customers, assuring them that they
+                are always safe while engaging with Tata Motors. This will help customers conveniently access our ‘New
+                Forever’ range of cars and SUVs.”.</p>
+        </div>
+        <div class="thumbnail">
+            <img src="tata.jpg" alt="car image3" class="imgFluid">
+        </div>
+    </section>
+    <hr>
+    <section class="contact" id="contact">
+        <h2 class="text-center">
+            Contact Us
+        </h2>
+        <div class="form">
+            <input class="form-input" type="text" name="name" id="name" placeholder="Enter your Name">
+            <input class="form-input" type="text" name="phone" id="phone" placeholder="Enter your Phone">
+            <input class="form-input" type="text" name="email" id="Email" placeholder="Enter your Email">
+            <textarea class="form-input" name="text" id="text" placeholder="Type Your Concern here." cols="20" rows="5"></textarea>
+            <button class="btn btn-dark">Submit</button>
+        </div>
+
+    </section>
+    <footer class="background">
+        <p class="text-footer">
+            Copyright &copy; 2021- All rights reserved.
+        </p>
+       
+    </footer>
+
+    <script>
+
+        var cartype="null";
+        var carbody="null";
+        var carvalue="null";
+        var carsafety="null"
+        var count = 0;
+    function textchange1() {
+      var x = document.getElementById("btn-a");
+      var y = document.getElementById("btn-b");
+      
+      if(count == 3){
+            x.innerHTML="Less than 3 stars safety rating";
+            y.innerHTML="3 stars and up";
+            carsafety="unsafe";
+            count=count+1;
+        }
+      if(count == 2){
+            x.innerHTML="Less than 20kmpl";
+            y.innerHTML="More than 20kmpl";
+            carvalue="lessthan5";
+            count=count+1;
+        }
+      if(count == 1){
+            x.innerHTML="Less than 5 lakh";
+            y.innerHTML="More than 5 lakh";
+            carbody="sedan";
+            count=count+1;
+        }
+      if(count == 0){
+      x.innerHTML = "Sedan";
+      y.innerHTML = "SUV";
+      cartype="new";
+      count=count+1;
+      }
+       
+     
+    
+    } 
+    
+    function textchange2() {
+        var x = document.getElementById("btn-a");
+      var y = document.getElementById("btn-b");
+      
+      if(count == 3){
+            x.innerHTML="Less than 3 stars safety rating";
+            y.innerHTML="3 stars and up";
+            carsafety="safe";
+            count=count+1;
+        }
+      if(count == 2){
+            x.innerHTML="Less than 20kmpl";
+            y.innerHTML="More than 20kmpl";
+            carvalue="morethan5";
+            count=count+1;
+        }
+      if(count == 1){
+            x.innerHTML="Less than 5 lakh";
+            y.innerHTML="More than 5 lakh";
+            carbody="SUV";
+            count=count+1;
+        }
+      if(count == 0){
+      x.innerHTML = "Sedan";
+      y.innerHTML = "SUV";
+      cartype="old";
+      count=count+1;
+      }
+       
+     
+    
+    } 
+    </script>
+
+
+</body>
+
+</html>
