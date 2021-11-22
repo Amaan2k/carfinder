@@ -13,7 +13,6 @@
     
     <header>
         <p>CarFinder</p>
-
         <img class="logo" src='autocar.svg' alt = "ldddogo">
         <nav>
             <ul class="nav_links">
@@ -123,16 +122,105 @@
         var cartype="null";
         var carbody="null";
         var carvalue="null";
-        var carsafety="null"
+        var carmileage="null";
+        var carsafety="null";
         var count = 0;
     function textchange1() {
       var x = document.getElementById("btn-a");
       var y = document.getElementById("btn-b");
       
+      
+
+      if (count == 4){
+         carsafety="lessthan3";
+         count++;
+      }
+         if(count==5)
+      { if (cartype=="used")
+          {
+              if(carbody=="sedan"&&carvalue=="lessthan5"&&carmileage=="lessthan20")
+              {
+                window.open("cars/aaa.html");
+                console.log(cartype);
+                console.log(carbody);
+                console.log(carvalue);
+                console.log(carmileage);
+                console.log(carsafety);
+              }
+              else if(carbody=="sedan"&&carvalue=="lessthan5"&&carmileage=="morethan20")
+              {
+                window.open("cars/mghect.html");
+              }
+              else if(carbody=="sedan"&&carvalue=="morethan5"&&carmileage=="lessthan20")
+              {
+                window.open("cars/mghect.html");
+              }
+              else if(carbody=="sedan"&&carvalue=="morethan5"&&carmileage=="morethan20")
+              {
+                window.open("cars/mghect.html");
+              }
+              else if(carbody=="suv"&&carvalue=="lessthan5"&&carmileage=="lessthan20")
+              {
+                window.open("cars/mghect.html");
+              }
+              else if(carbody=="suv"&&carvalue=="lessthan5"&&carmileage=="morethan20")
+              {
+                window.open("cars/mghect.html");
+              }
+              else if(carbody=="suv"&&carvalue=="morethan5"&&carmileage=="lessthan20")
+              {
+                window.open("cars/mghect.html");
+              }
+              else if(carbody=="suv"&&carvalue=="morethan5"&&carmileage=="morethan20")
+              {
+                window.open("cars/mghect.html");
+              }
+
+          }
+          else if (cartype=="new")
+          {
+              if(carbody=="sedan"&&carvalue=="lessthan5"&&carmileage=="lessthan20")
+              {
+                window.open("cars/test.html");
+              }
+              else if(carbody=="sedan"&&carvalue=="lessthan5"&&carmileage=="morethan")
+              {
+                window.open("cars/test.html");
+              }
+              else if(carbody=="sedan"&&carvalue=="morethan5"&&carmileage=="lessthan20")
+              {
+                window.open("cars/test.html");
+              }
+              else if(carbody=="sedan"&&carvalue=="morethan5"&&carmileage=="morethan20")
+              {
+                window.open("cars/test.html");
+              }
+              else if(carbody=="suv"&&carvalue=="lessthan5"&&carmileage=="lessthan20")
+              {
+                window.open("cars/test.html");
+              }
+              else if(carbody=="suv"&&carvalue=="lessthan5"&&carmileage=="morethan20")
+              {
+                window.open("cars/test.html");
+              }
+              else if(carbody=="suv"&&carvalue=="morethan5"&&carmileage=="lessthan20")
+              {
+                window.open("cars/test.html");
+              }
+              else if(carbody=="suv"&&carvalue=="morethan5"&&carmileage=="morethan20")
+              {
+                window.open("cars/test.html");
+              }
+
+          }
+          
+        } 
+    
+
       if(count == 3){
             x.innerHTML="Less than 3 stars safety rating";
             y.innerHTML="3 stars and up";
-            carsafety="unsafe";
+            carmileage="lessthan20";
             count=count+1;
         }
       if(count == 2){
@@ -150,7 +238,7 @@
       if(count == 0){
       x.innerHTML = "Sedan";
       y.innerHTML = "SUV";
-      cartype="new";
+      cartype="used";
       count=count+1;
       }
        
@@ -161,11 +249,95 @@
     function textchange2() {
         var x = document.getElementById("btn-a");
       var y = document.getElementById("btn-b");
+
+      if (count == 4){
+         carsafety="morethan3";
+         count++;
+      }
+
+         if(count==5)
+
+      {
+           if (cartype=="used")
+          {
+              if(carbody=="sedan"&&carvalue=="lessthan5"&&carmileage=="lessthan20")
+              {
+                window.open("cars/test.html");
+              }
+              else if(carbody=="sedan"&&carvalue=="lessthan5"&&carmileage=="morethan20")
+              {
+                window.open("cars/test.html");
+              }
+              else if(carbody=="sedan"&&carvalue=="morethan5"&&carmileage=="lessthan20")
+              {
+                window.open("cars/test.html");
+              }
+              else if(carbody=="sedan"&&carvalue=="morethan5"&&carmileage=="morethan20")
+              {
+                window.open("cars/test.html");
+              }
+              else if(carbody=="suv"&&carvalue=="lessthan5"&&carmileage=="lessthan20")
+              {
+                window.open("cars/test.html");
+              }
+              else if(carbody=="suv"&&carvalue=="lessthan5"&&carmileage=="morethan20")
+              {
+                window.open("cars/test.html");
+              }
+              else if(carbody=="suv"&&carvalue=="morethan5"&&carmileage=="lessthan20")
+              {
+                window.open("cars/test.html");
+              }
+              else if(carbody=="suv"&&carvalue=="morethan5"&&carmileage=="morethan20")
+              {
+                window.open("cars/test.html");
+              }
+
+          }
+          else if (cartype=="new")
+          {
+              if(carbody=="sedan"&&carvalue=="lessthan5"&&carmileage=="lessthan20")
+              {
+                window.open("cars/test.html");
+              }
+              else if(carbody=="sedan"&&carvalue=="lessthan5"&&carmileage=="morethan")
+              {
+                window.open("cars/test.html");
+              }
+              else if(carbody=="sedan"&&carvalue=="morethan5"&&carmileage=="lessthan20")
+              {
+                window.open("cars/test.html");
+              }
+              else if(carbody=="sedan"&&carvalue=="morethan5"&&carmileage=="morethan20")
+              {
+                window.open("cars/test.html");
+              }
+              else if(carbody=="suv"&&carvalue=="lessthan5"&&carmileage=="lessthan20")
+              {
+                window.open("cars/test.html");
+              }
+              else if(carbody=="suv"&&carvalue=="lessthan5"&&carmileage=="morethan20")
+              {
+                window.open("cars/test.html");
+              }
+              else if(carbody=="suv"&&carvalue=="morethan5"&&carmileage=="lessthan20")
+              {
+                window.open("cars/test.html");
+              }
+              else if(carbody=="suv"&&carvalue=="morethan5"&&carmileage=="morethan20")
+              {
+                window.open("cars/mghect.html");
+              }
+
+          }
+        }
+          
+
       
       if(count == 3){
             x.innerHTML="Less than 3 stars safety rating";
             y.innerHTML="3 stars and up";
-            carsafety="safe";
+            carmileage="morethan20";
             count=count+1;
         }
       if(count == 2){
@@ -183,13 +355,14 @@
       if(count == 0){
       x.innerHTML = "Sedan";
       y.innerHTML = "SUV";
-      cartype="old";
+      cartype="new";
       count=count+1;
-      }
-       
+    }
+}
+
+
      
-    
-    } 
+      
     </script>
 
 

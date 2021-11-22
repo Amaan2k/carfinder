@@ -1,0 +1,55 @@
+body {
+    background-color: rgb(214, 214, 214);
+}
+
+.heading{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger ;
+    text-align: center;
+}
+
+.carimg {
+    display: flex;
+    height: 500px;
+    justify-content: right;
+
+}
+
+.carimg img {
+    border-radius: 10px;
+}
+
+.sectemp {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 70px;
+    margin: auto;
+
+
+
+
+}
+
+.tempinfo {
+    display: flex;
+    height: 500px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    padding: 0px 2px;
+
+
+}
+
+.hre {
+    display: flex;
+    width: 0px;
+    align-items: center;
+    height: 150px;
+    position: relative;
+    left: -10px;
+
+    top: -31px;
+
+    margin: 0px 400px;
+}
