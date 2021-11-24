@@ -34,7 +34,7 @@
                     you and upgrade yourself.</p>
                 <div>
                     <button onclick="textchange1()" id="btn-a">Used Cars</button>
-                    <button onclick="textchange1()" id="btn-b">New Cars</button>
+                    <button onclick="textchange2()" id="btn-b">New Cars</button>
                 </div>
 
             </div>
@@ -119,9 +119,9 @@
 
     <script>
 
-        var cartype="null";
-        var carbody="null";
-        var carvalue="null";
+        var cartype;
+        var carbody;
+        var carvalue;
         var carmileage="null";
         var carsafety="null";
         var count = 0;
@@ -132,84 +132,80 @@
       
 
       if (count == 4){
-         carsafety="lessthan3";
+         carsafety="lessthan4";
+         console.log(count);
          count++;
       }
          if(count==5)
       { if (cartype=="used")
           {
-              if(carbody=="sedan"&&carvalue=="lessthan5"&&carmileage=="lessthan20")
+              if(carbody=="sedan"&&carvalue=="lessthan10"&&carmileage=="lessthan20")
               {
-                window.open("cars/aaa.html");
-                console.log(cartype);
-                console.log(carbody);
-                console.log(carvalue);
-                console.log(carmileage);
-                console.log(carsafety);
+                window.location.href = "cars/error.html";
               }
-              else if(carbody=="sedan"&&carvalue=="lessthan5"&&carmileage=="morethan20")
+              else if(carbody=="sedan"&&carvalue=="lessthan10"&&carmileage=="morethan20")
               {
-                window.open("cars/mghect.html");
+                window.location.href = "cars/error.html";
               }
-              else if(carbody=="sedan"&&carvalue=="morethan5"&&carmileage=="lessthan20")
+              else if(carbody=="sedan"&&carvalue=="morethan10"&&carmileage=="lessthan20")
               {
-                window.open("cars/mghect.html");
+                window.location.href = "cars/usedskoda.html";
               }
-              else if(carbody=="sedan"&&carvalue=="morethan5"&&carmileage=="morethan20")
+              else if(carbody=="sedan"&&carvalue=="morethan10"&&carmileage=="morethan20")
               {
-                window.open("cars/mghect.html");
+                window.location.href = "cars/usedoct.html";
               }
-              else if(carbody=="suv"&&carvalue=="lessthan5"&&carmileage=="lessthan20")
+              else if(carbody=="suv"&&carvalue=="lessthan10"&&carmileage=="lessthan20")
               {
-                window.open("cars/mghect.html");
+                window.location.href = "cars/usedseltos.html";
               }
-              else if(carbody=="suv"&&carvalue=="lessthan5"&&carmileage=="morethan20")
+              else if(carbody=="suv"&&carvalue=="lessthan10"&&carmileage=="morethan20")
               {
-                window.open("cars/mghect.html");
+                window.location.href = "cars/error.html";
               }
-              else if(carbody=="suv"&&carvalue=="morethan5"&&carmileage=="lessthan20")
+              else if(carbody=="suv"&&carvalue=="morethan10"&&carmileage=="lessthan20")
               {
-                window.open("cars/mghect.html");
+                window.location.href = "cars/usedmg.html";
               }
-              else if(carbody=="suv"&&carvalue=="morethan5"&&carmileage=="morethan20")
+              else if(carbody=="suv"&&carvalue=="morethan10"&&carmileage=="morethan20")
               {
-                window.open("cars/mghect.html");
+                window.location.href = "cars/error.html";
               }
 
           }
           else if (cartype=="new")
           {
-              if(carbody=="sedan"&&carvalue=="lessthan5"&&carmileage=="lessthan20")
+              if(carbody=="sedan"&&carvalue=="lessthan10"&&carmileage=="lessthan20")
               {
-                window.open("cars/test.html");
+                window.location.href = "cars/verna.html";
               }
-              else if(carbody=="sedan"&&carvalue=="lessthan5"&&carmileage=="morethan")
+              else if(carbody=="sedan"&&carvalue=="lessthan10"&&carmileage=="morethan20")
               {
-                window.open("cars/test.html");
+                window.location.href = "cars/dzire.html";
               }
-              else if(carbody=="sedan"&&carvalue=="morethan5"&&carmileage=="lessthan20")
+              else if(carbody=="sedan"&&carvalue=="morethan10"&&carmileage=="lessthan20")
               {
-                window.open("cars/test.html");
+                window.location.href = "cars/superb.html";
               }
-              else if(carbody=="sedan"&&carvalue=="morethan5"&&carmileage=="morethan20")
+              else if(carbody=="sedan"&&carvalue=="morethan10"&&carmileage=="morethan20")
               {
-                window.open("cars/test.html");
+                window.location.href = "cars/octavia.html";
               }
-              else if(carbody=="suv"&&carvalue=="lessthan5"&&carmileage=="lessthan20")
+              else if(carbody=="suv"&&carvalue=="lessthan10"&&carmileage=="lessthan20")
               {
-                window.open("cars/test.html");
+                window.location.href="cars/seltos.html";
               }
-              else if(carbody=="suv"&&carvalue=="lessthan5"&&carmileage=="morethan20")
+              else if(carbody=="suv"&&carvalue=="lessthan10"&&carmileage=="morethan20")
               {
-                window.open("cars/test.html");
+                window.location.href="cars/brezza.html";
               }
-              else if(carbody=="suv"&&carvalue=="morethan5"&&carmileage=="lessthan20")
+              else if(carbody=="suv"&&carvalue=="morethan10"&&carmileage=="lessthan20")
               {
-                window.open("cars/test.html");
+                window.location.href="cars/hector.html";
               }
-              else if(carbody=="suv"&&carvalue=="morethan5"&&carmileage=="morethan20")
+              else if(carbody=="suv"&&carvalue=="morethan10"&&carmileage=="morethan20")
               {
-                window.open("cars/test.html");
+                window.location.href="cars/compass.html";
               }
 
           }
@@ -218,28 +214,36 @@
     
 
       if(count == 3){
-            x.innerHTML="Less than 3 stars safety rating";
-            y.innerHTML="3 stars and up";
+            x.innerHTML="Less than 4 stars safety rating";
+            y.innerHTML="4 stars and up";
             carmileage="lessthan20";
             count=count+1;
+            console.log(carmileage);
+            console.log(count);
         }
       if(count == 2){
             x.innerHTML="Less than 20kmpl";
             y.innerHTML="More than 20kmpl";
-            carvalue="lessthan5";
+            carvalue="lessthan10";
             count=count+1;
+            console.log(carvalue);
+            console.log(count);
         }
       if(count == 1){
-            x.innerHTML="Less than 5 lakh";
-            y.innerHTML="More than 5 lakh";
+            x.innerHTML="Less than 10 lakh";
+            y.innerHTML="More than 10 lakh";
             carbody="sedan";
             count=count+1;
+            console.log(carbody);
+            console.log(count);
         }
       if(count == 0){
       x.innerHTML = "Sedan";
       y.innerHTML = "SUV";
       cartype="used";
       count=count+1;
+      console.log(cartype);
+      console.log(count);
       }
        
      
@@ -251,7 +255,7 @@
       var y = document.getElementById("btn-b");
 
       if (count == 4){
-         carsafety="morethan3";
+         carsafety="morethan4";
          count++;
       }
 
@@ -260,73 +264,73 @@
       {
            if (cartype=="used")
           {
-              if(carbody=="sedan"&&carvalue=="lessthan5"&&carmileage=="lessthan20")
+              if(carbody=="sedan"&&carvalue=="lessthan10"&&carmileage=="lessthan20")
               {
-                window.open("cars/test.html");
+                window.location.href = "cars/usedcity.html";
               }
-              else if(carbody=="sedan"&&carvalue=="lessthan5"&&carmileage=="morethan20")
+              else if(carbody=="sedan"&&carvalue=="lessthan10"&&carmileage=="morethan20")
               {
-                window.open("cars/test.html");
+                window.location.href = "cars/error.html";
               }
-              else if(carbody=="sedan"&&carvalue=="morethan5"&&carmileage=="lessthan20")
+              else if(carbody=="sedan"&&carvalue=="morethan10"&&carmileage=="lessthan20")
               {
-                window.open("cars/test.html");
+                window.location.href = "cars/used3series.html";
               }
-              else if(carbody=="sedan"&&carvalue=="morethan5"&&carmileage=="morethan20")
+              else if(carbody=="sedan"&&carvalue=="morethan10"&&carmileage=="morethan20")
               {
-                window.open("cars/test.html");
+                window.location.href = "cars/error.html";
               }
-              else if(carbody=="suv"&&carvalue=="lessthan5"&&carmileage=="lessthan20")
+              else if(carbody=="suv"&&carvalue=="lessthan10"&&carmileage=="lessthan20")
               {
-                window.open("cars/test.html");
+                window.location.href = "cars/test.html";
               }
-              else if(carbody=="suv"&&carvalue=="lessthan5"&&carmileage=="morethan20")
+              else if(carbody=="suv"&&carvalue=="lessthan10"&&carmileage=="morethan20")
               {
-                window.open("cars/test.html");
+                window.location.href = "cars/error.html";
               }
-              else if(carbody=="suv"&&carvalue=="morethan5"&&carmileage=="lessthan20")
+              else if(carbody=="suv"&&carvalue=="morethan10"&&carmileage=="lessthan20")
               {
-                window.open("cars/test.html");
+                window.location.href = "cars/usedgla.html";
               }
-              else if(carbody=="suv"&&carvalue=="morethan5"&&carmileage=="morethan20")
+              else if(carbody=="suv"&&carvalue=="morethan10"&&carmileage=="morethan20")
               {
-                window.open("cars/test.html");
+                window.location.href = "cars/error.html";
               }
 
           }
           else if (cartype=="new")
           {
-              if(carbody=="sedan"&&carvalue=="lessthan5"&&carmileage=="lessthan20")
+              if(carbody=="sedan"&&carvalue=="lessthan10"&&carmileage=="lessthan20")
               {
-                window.open("cars/test.html");
+                window.location.href = 'cars/city.html';
               }
-              else if(carbody=="sedan"&&carvalue=="lessthan5"&&carmileage=="morethan")
+              else if(carbody=="sedan"&&carvalue=="lessthan10"&&carmileage=="morethan20")
               {
-                window.open("cars/test.html");
+                window.location.href = "cars/ciaz.html";
               }
-              else if(carbody=="sedan"&&carvalue=="morethan5"&&carmileage=="lessthan20")
+              else if(carbody=="sedan"&&carvalue=="morethan10"&&carmileage=="lessthan20")
               {
-                window.open("cars/test.html");
+                window.location.href = "cars/3series.html";
               }
-              else if(carbody=="sedan"&&carvalue=="morethan5"&&carmileage=="morethan20")
+              else if(carbody=="sedan"&&carvalue=="morethan10"&&carmileage=="morethan20")
               {
-                window.open("cars/test.html");
+                window.location.href = "cars/lexuses.html";
               }
-              else if(carbody=="suv"&&carvalue=="lessthan5"&&carmileage=="lessthan20")
+              else if(carbody=="suv"&&carvalue=="lessthan10"&&carmileage=="lessthan20")
               {
-                window.open("cars/test.html");
+                window.location.href = 'cars/scross.html';
               }
-              else if(carbody=="suv"&&carvalue=="lessthan5"&&carmileage=="morethan20")
+              else if(carbody=="suv"&&carvalue=="lessthan10"&&carmileage=="morethan20")
               {
-                window.open("cars/test.html");
+                window.location.href="cars/nexon.html";
               }
-              else if(carbody=="suv"&&carvalue=="morethan5"&&carmileage=="lessthan20")
+              else if(carbody=="suv"&&carvalue=="morethan10"&&carmileage=="lessthan20")
               {
-                window.open("cars/test.html");
+                window.location.href="cars/benzgla.html";
               }
-              else if(carbody=="suv"&&carvalue=="morethan5"&&carmileage=="morethan20")
+              else if(carbody=="suv"&&carvalue=="morethan10"&&carmileage=="morethan20")
               {
-                window.open("cars/mghect.html");
+                window.location.href="cars/bmwx1.html";
               }
 
           }
@@ -335,22 +339,28 @@
 
       
       if(count == 3){
-            x.innerHTML="Less than 3 stars safety rating";
-            y.innerHTML="3 stars and up";
+            x.innerHTML="Less than 4 stars safety rating";
+            y.innerHTML="4 stars and up";
             carmileage="morethan20";
             count=count+1;
+            console.log(carmileage);
+
         }
       if(count == 2){
             x.innerHTML="Less than 20kmpl";
             y.innerHTML="More than 20kmpl";
-            carvalue="morethan5";
+            carvalue="morethan10";
             count=count+1;
+            console.log(carvalue);
+
         }
       if(count == 1){
-            x.innerHTML="Less than 5 lakh";
-            y.innerHTML="More than 5 lakh";
-            carbody="SUV";
+            x.innerHTML="Less than 10 lakh";
+            y.innerHTML="More than 10 lakh";
+            carbody="suv";
             count=count+1;
+            console.log(carbody);
+
         }
       if(count == 0){
       x.innerHTML = "Sedan";
